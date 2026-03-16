@@ -1,0 +1,11 @@
+<div class="counter">
+  <p class="count-value">{{ getCount()() }}</p>
+  <p>{{ doubleCount() }}</p>
+
+  <div class="actions">
+    <button type="button" (click)="decrement()">Decrement</button>
+    <button type="button" (click)="increment()">Increment</button>
+    <button type="button" (click)="reset()">Reset</button>
+    <button type="button" (click)="clear()">Clear</button>
+  </div>
+</div>

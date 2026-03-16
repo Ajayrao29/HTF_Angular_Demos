@@ -1,0 +1,13 @@
+<section class="page">
+	<h2>Person List</h2>
+
+	<div class="cards">
+		@for (person of people; track person.id) {
+			<article class="card">
+				<p><strong>ID:</strong> {{ person.id }}</p>
+				<p><strong>Name:</strong> {{ person.fname }} {{ person.lname }}</p>
+				<p><strong>Age:</strong> {{ person.age }}</p>
+			</article>
+		}
+	</div>
+</section>

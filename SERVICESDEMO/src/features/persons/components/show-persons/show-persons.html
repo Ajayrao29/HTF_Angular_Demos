@@ -1,0 +1,13 @@
+<h3>Persons</h3>
+
+<ul>
+  @for (person of persons; track person.id) {
+    <li class="row-item">
+      <span>{{ person.id }} - {{ person.name }}</span>
+      <span class="actions">
+        <button type="button" [routerLink]="['/persons/edit', person.id]">Edit</button>
+        <button type="button" (click)="deletePerson(person.id)">Delete</button>
+      </span>
+    </li>
+  }
+</ul>

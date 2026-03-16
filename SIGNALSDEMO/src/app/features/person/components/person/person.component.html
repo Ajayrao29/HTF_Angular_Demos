@@ -1,0 +1,21 @@
+<div>
+  <h3>Persons</h3>
+  <input #personName type="text" placeholder="Enter person name" />
+  <button type="button" (click)="addPerson(personName.value); personName.value = ''">
+    Add Person
+  </button>
+  <ul>
+    @for (person of persons(); track person; let i = $index) {
+      <li>
+        {{ person }}
+        <button type="button" (click)="removePerson(i)">Remove</button>
+      </li>
+    }
+  </ul>
+</div> 
+
+
+
+
+
+

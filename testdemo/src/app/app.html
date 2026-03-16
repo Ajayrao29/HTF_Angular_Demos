@@ -1,0 +1,65 @@
+<nav class="navbar glass animate-fade-in">
+  <div class="nav-container">
+    <div class="logo">
+      <span class="logo-icon">▲</span>
+      <span class="logo-text">TestDemo</span>
+    </div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero-section animate-fade-in">
+    <div class="hero-content">
+      <h1 class="hero-title">Experience the Future of <span class="gradient-text">Web Apps</span></h1>
+      <p class="hero-subtitle">Building high-performance, beautiful, and intuitive user experiences with Angular and
+        modern design principles.</p>
+      <div class="hero-actions">
+        <button class="btn btn-lg btn-primary">Explore Now</button>
+        <button class="btn btn-lg btn-secondary">Learn More</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="video-placeholder glass">
+        <img src="hero.png" alt="Hero Visualization" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <h2 class="section-title animate-fade-in">Why Choose TestDemo?</h2>
+    <div class="features-grid">
+      <div class="feature-card glass animate-fade-in" style="animation-delay: 0.1s">
+        <div class="feature-icon">⚡</div>
+        <h3>Blazing Fast</h3>
+        <p>Optimized for speed and performance, ensuring your users have a seamless experience everywhere.</p>
+      </div>
+      <div class="feature-card glass animate-fade-in" style="animation-delay: 0.2s">
+        <div class="feature-icon">🎨</div>
+        <h3>Modern Design</h3>
+        <p>Crafted with the latest UI/UX trends, featuring glassmorphism, gradients, and smooth animations.</p>
+      </div>
+      <div class="feature-card glass animate-fade-in" style="animation-delay: 0.3s">
+        <div class="feature-icon">🛡️</div>
+        <h3>Enterprise Grade</h3>
+        <p>Built on the robust Angular framework, ready for scale and complex business requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-section">
+    <app-hello-component />
+    <app-counter />
+    <app-dashboard />
+  </section>
+</main>
+
+<footer class="glass">
+  <p>&copy; 2026 TestDemo Inc. Crafted with precision.</p>
+</footer>
+
+<router-outlet />

@@ -1,0 +1,14 @@
+<div class="hello-container glass animate-fade-in">
+  <h2>Personalized Greeting</h2>
+  <div class="input-group">
+    <label for="nameInput">Enter your name:</label>
+    <input 
+      id="nameInput" 
+      type="text" 
+      [(ngModel)]="userName" 
+      (ngModelChange)="updateGreeting()" 
+      placeholder="Type your name..."
+    >
+  </div>
+  <p class="greeting-message">{{ greeting() }}</p>
+</div>

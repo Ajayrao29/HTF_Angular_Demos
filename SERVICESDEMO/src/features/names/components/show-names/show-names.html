@@ -1,0 +1,13 @@
+<h3>Names</h3>
+
+<ul>
+  @for (name of names; track $index; let i = $index) {
+    <li class="row-item">
+      <span>{{ name }}</span>
+      <span class="actions">
+        <button type="button" (click)="editName(i)">Edit</button>
+        <button type="button" (click)="removeName(name)">Delete</button>
+      </span>
+    </li>
+  }
+</ul>

@@ -1,0 +1,61 @@
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg border border-gray-200">
+  
+  <!-- Username Field -->
+  <div class="mb-5">
+    <label for="username" class="block mb-2 text-sm font-medium text-gray-900">
+      User Name
+    </label>
+    <input 
+      type="text" 
+      name="username" 
+      ngModel 
+      required 
+      minlength="3"
+      placeholder="Enter username"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+    />
+  </div>
+
+  <!-- Password Field -->
+  <div class="mb-5">
+    <label for="password" class="block mb-2 text-sm font-medium text-gray-900">
+      Password
+    </label>
+    <input
+      type="password"
+      name="password"
+      ngModel
+      required
+      minlength="6"
+      placeholder="Enter password"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+    />
+  </div>
+
+  <!-- Email Field -->
+  <div class="mb-5">
+    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">
+      Email
+    </label>
+    <input 
+      type="email" 
+      name="email" 
+      ngModel 
+      required 
+      email 
+      placeholder="Enter email"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+    />
+  </div>
+
+  <!-- Submit Button -->
+  <button 
+    type="submit" 
+    [disabled]="!userForm.valid"
+    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+  >
+    Submit
+  </button>
+  
+</form>

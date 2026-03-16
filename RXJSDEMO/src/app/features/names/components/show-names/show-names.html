@@ -1,0 +1,10 @@
+<h3>Names</h3>
+
+<ul>
+  @for (name of names; track $index) {
+    <li>
+      <span>{{ name }}</span>
+      <button type="button" (click)="removeName(name)">Remove</button>
+    </li>
+  }
+</ul>

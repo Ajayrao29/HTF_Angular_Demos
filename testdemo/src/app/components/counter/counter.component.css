@@ -1,0 +1,79 @@
+.counter-container {
+  padding: 40px;
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.counter-display {
+  background: rgba(0, 0, 0, 0.2);
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--card-border);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.count-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-family: 'Inter', monospace;
+  background: linear-gradient(to bottom, #fff, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.count-value.negative {
+  background: linear-gradient(to bottom, #fca5a5, #ef4444);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.counter-controls {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.btn-secondary {
+  border: 1px solid var(--card-border);
+}
+
+.btn-reset {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.btn-reset:hover {
+  color: var(--text-main);
+}

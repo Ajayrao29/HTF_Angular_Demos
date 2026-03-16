@@ -1,0 +1,18 @@
+<div class="counter-container glass animate-fade-in">
+  <h2>Interactive Counter</h2>
+  
+  <div class="counter-display">
+    <span class="count-value" [class.negative]="count() < 0">{{ count() }}</span>
+  </div>
+
+  <div class="counter-controls">
+    <button class="btn btn-secondary" (click)="decrement()" aria-label="Decrement">
+      <span class="icon">−</span>
+    </button>
+    <button class="btn btn-primary" (click)="increment()" aria-label="Increment">
+      <span class="icon">+</span>
+    </button>
+  </div>
+
+  <button class="btn-reset" (click)="reset()">Reset Counter</button>
+</div>

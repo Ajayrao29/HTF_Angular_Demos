@@ -1,0 +1,11 @@
+<section class="mx-auto max-w-5xl p-5 sm:p-7">
+  <h2 class="mb-6 text-3xl font-bold text-slate-800">Person List</h2>
+
+  <app-add-person-component (add)="addPerson($event)"></app-add-person-component>
+
+  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+  @for(name of names; track name.id){
+    <app-person-component [person]="name" (remove)="removePerson($event)"></app-person-component>
+  }
+  </div>
+</section>

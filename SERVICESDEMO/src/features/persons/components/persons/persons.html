@@ -1,0 +1,15 @@
+<h3>Persons</h3>
+
+<input #personInput type="text" placeholder="Enter person" />
+<button type="button" (click)="addPerson(personInput)">Add Person</button>
+
+<ul>
+  @for (person of persons; track person.id) {
+    <li>
+      {{ person.id }} - {{ person.name }}
+      <button type="button" (click)="deletePerson(person.id)">Delete</button>
+      <input #updatedPersonInput type="text" placeholder="New name" />
+      <button type="button" (click)="updatePersonById(person.id, updatedPersonInput)">Update</button>
+    </li>
+  }
+</ul>
